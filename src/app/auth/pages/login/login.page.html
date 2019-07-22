@@ -1,0 +1,31 @@
+<ion-content class="ion padding">
+  <H1 text-center><!--Aqui estamos adicionando um  icone-->
+    <ion-icon name="done-all" color=primary class="icon-7em"></ion-icon>
+    </H1>
+
+    <form [formGroup]= "authform"]>
+      <ion-item>
+        <ion-icon name="email" color="primary" slot="start"></ion-icon>
+        <ion-input type="email" placeholder="Email" formControlName="email"
+        inputmode="email" autofocus=true></ion-input>
+        </ion-item><!--Aqui temos um texto email linha 7 e uma linha onde será colocado L8-->
+        
+        <ion-item>
+        <ion-icon name="lock" color="primary" slot="start"></ion-icon>
+        <ion-input type="password" placeholder="password"></ion-input>
+        formControlName="password"></ion-input>
+        </ion-item><!--Aq será onde colocaremos a senha-->
+
+        <ion-button expand="block" type = "submit"
+        [disabled]=authForm.invalid>Login</ion-button>
+    </form>
+
+ 
+
+<ion-button expand="block">Login</ion-button>
+<ion-button expand="block" fill="clear">Crie uma conta</ion-button>
+<ion-button expand="block">
+<ion-icon name="logo-facebook" slot="start"></ion-icon>
+Login pelo facebook
+</ion-button>
+</ion-content>
